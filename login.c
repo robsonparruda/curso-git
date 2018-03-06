@@ -14,10 +14,11 @@ int main()
   gets(login);
   printf("Senha: \n");
   gets(senha);
-   	   if (login == login && senha == senha){
-       printf("acesso liberado");
+
+   	   if (strcmp(login, "Aluno") == 0 && strcmp(senha, "uni9") == 0){
+       printf("acesso liberado/n");
     } else{
-       printf("Usuário ou senha inválidos"); 
+       printf("Usuário ou senha inválidos/n"); 
     }
    
    
